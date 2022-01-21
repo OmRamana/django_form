@@ -14,8 +14,11 @@
     <div class ="own_margins">
         <form method ='post'>
             {% csrf_token %}
-            {{form}}
-            <input class="btn btn-secondary" type="submit" value = "Search">                
+            {{form}}     
+                      
+            <div class="top">
+                <input class="btn btn-secondary" type="submit" value = "Search">
+            </div>                                               
         </form> 
     </div>     
 
