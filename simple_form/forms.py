@@ -1,6 +1,5 @@
 from django import forms
 
-class SearchForm(forms.ModelForm):
-    search_query = forms.CharField(max_length=100)
+class SearchForm(forms.Form):
+    search_query = forms.CharField(label = "Search",max_length=100)
 
-    
