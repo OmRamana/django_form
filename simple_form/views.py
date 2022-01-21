@@ -6,7 +6,7 @@ def search(request):
         form = SearchForm(request.POST)
         if form.is_valid():
             s_query = form.cleaned_data['search_query']
-            return render(request, 'search.html', {'form': form, 's_results': s_query})
+            return render(request, 'search.html', {'form': form, 's_query': s_query})
     else:
         form = SearchForm()
 
