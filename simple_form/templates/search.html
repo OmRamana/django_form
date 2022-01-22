@@ -20,11 +20,29 @@
                 <input class="btn btn-secondary" type="submit" value = "Search">
             </div>                                               
         </form> 
-    </div>     
-
+    </div>  
+ 
     <div class="midle">
-        <h1>{{s_query}}</h1>
-    </div>
+        <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Description</th>
+                <th scope="col">Temperature</th>
+                <th scope="col">Maximum Temperature</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{{city}}</th>  
+                <td>{{discription}}</td>
+                <td>{{temp}}</td>
+                <td>{{temp_max}}</td>
+              </tr>
+                         
+            </tbody>
+          </table>
+     </div>
     
 </body>
 </html>
