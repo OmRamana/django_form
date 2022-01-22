@@ -9,7 +9,7 @@ def search(request):
         if form.is_valid():
             s_query = form.cleaned_data['search_query']
             data = get_weather(s_query)
-            return render(request, 'search.html',{'form': form,'city':data[0],'discription':data[1],'temp':data[2],'temp_max': data[3]})
+            return render(request, 'search.html',{'form': form,'city':data[0],'discription':data[1],'temp':data[2],'temp_max': data[3],'Description':'Description','Temperature':'Temperature','Maximum_Temperature':'Maximum Temperature'})
     else:
         form = SearchForm()
 
